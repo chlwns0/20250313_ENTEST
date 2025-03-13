@@ -1,0 +1,398 @@
+@media all and (min-width: 810px) and (max-width: 1399px) {
+    @font-face {
+        font-family: "Pretendard-Bold";
+        src: url(../fonts/Pretendard-Bold.woff),
+            url(../fonts/Pretendard-Bold.woff2);
+    }
+
+    @font-face {
+        font-family: "Pretendard-Regular";
+        src: url(../fonts/Pretendard-Regular.woff),
+            url(../fonts/Pretendard-Regular.woff2);
+    }
+
+    header {
+        width: 100%;
+        height: 53px;
+        position: fixed;
+
+        background-color: #f5f5f5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 99;
+    }
+
+    header .inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* border: 1px solid red; */
+
+        display: none;
+    }
+
+    header .inner_mo {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    header .inner_mo h1 a img {
+        width: 30%;
+    }
+
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: rgb(105, 105, 105);
+        font-size: 3.5vw;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 2.6vw;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 3.6vw;
+        transition: color 0.3s ease;
+    }
+
+    .nav-menu a.active {
+        color: #3b65ff;
+    }
+
+    .nav-menu a:hover {
+        color: #3b65ff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #cccccc;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-menu a {
+        font-size: 4vw;
+        margin: 2.0vw 0;
+        margin-left: 6.0vw;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .menu-toggle.open+.nav-menu {
+        transform: translateX(0);
+    }
+
+    .menu-toggle.open {
+        transform: rotate(90deg);
+        z-index: 10;
+    }
+
+    /* intro */
+
+    #intro {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        padding-top: 53px;
+    }
+
+    #intro .slider {
+        width: 100%;
+        position: relative;
+    }
+
+    #intro .slider .slide {
+        position: relative;
+    }
+
+    #intro .slider img {
+        width: 100%;
+        display: block;
+    }
+
+    #intro .slider .title {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+        color: #fff;
+    }
+
+    #intro .slider .title h2 {
+        font-size: 3.6vw;
+        font-family: "Pretendard-Bold";
+        line-height: 1.2;
+        margin-bottom: 34px;
+    }
+
+    #intro .slider .title p {
+        font-size: 2.1vw;
+        font-family: "Pretendard-Regular";
+        line-height: 1.2;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        font-size: 2.5vw;
+        background: rgba(0, 0, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .slick-prev {
+        left: 10px;
+    }
+
+    .slick-next {
+        right: 10px;
+    }
+
+    /* card */
+    #card {
+        display: none;
+    }
+
+    #card_mo {
+        width: 100%;
+        /* border: 1px solid red; */
+        position: relative;
+        padding-top: 15%;
+        padding-bottom: 20%;
+        box-sizing: border-box;
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #card_mo .inner {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* border: 1px solid blue; */
+    }
+
+    #card_mo .inner .card {
+        width: 48%;
+        /* border: 1px solid red; */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 2%;
+    }
+
+    #card_mo .inner .card:last-child {
+        margin: 0;
+    }
+
+    #card_mo .inner .card .card_img {
+        width: 90%;
+        margin: 10px auto;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    #card_mo .inner .card .card_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #card_mo .inner .card .title {
+        width: 90%;
+        margin: 20px auto 0;
+        margin-left: 30px;
+        /* border: 1px solid blue; */
+    }
+
+    #card_mo .inner .card .title h2 {
+        font-size: 2.1vw;
+        font-family: "Pretendard-Bold";
+    }
+
+    #card_mo .inner .card .title h3 {
+        font-size: 1.3vw;
+        font-family: "Pretendard-Regular";
+        margin: 20px auto 50px;
+    }
+
+    #card_mo .inner .card .title p {
+        font-size: 1vw;
+        color: #bdbdbd;
+        padding-bottom: 30px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -15%;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .custom-dot {
+        background-color: #ccc;
+        /* Default color */
+        border: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        /* Make it round */
+        margin: 0 5px;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Change the color of active dot */
+    .slick-dots .slick-active .custom-dot {
+        background-color: #36fab9;
+    }
+
+    .custom-dot:hover {
+        background-color: #555;
+    }
+
+    /* custom */
+    #custom {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #custom .title {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #custom .title a:hover {
+        background-color: #979797;
+    }
+
+    #custom .title a {
+        font-size: 1.3vw;
+        font-weight: 700;
+        text-align: center;
+        width: 170px;
+        border: 1px solid #000;
+        padding: 15px;
+        transition: all 0.3s;
+        background-color: #fafafa;
+    }
+
+    #custom .title a.active {
+        box-shadow: 0 1px 0 #333333;
+        background-color: #36fab9;
+        color: #000000;
+    }
+
+    #custom .contents {
+        width: 90%;
+        margin: 100px auto 0;
+        height: auto;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    #custom .contents .inner {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #custom .contents .inner img {
+        display: inline-block;
+        max-width: 20%;
+        height: auto;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background-color: #1c1d1c;
+    }
+
+    footer .inner {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    footer .inner img {
+        width: 15%;
+        margin-bottom: 30px;
+    }
+
+    footer .inner h2 {
+        font-size: 1.8vw;
+        color: #fff;
+        font-family: "Pretendard-Regular";
+    }
+}

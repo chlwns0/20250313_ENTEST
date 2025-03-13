@@ -1,0 +1,284 @@
+@media all and (min-width: 1400px) and (max-width: 1920px) {
+    @font-face {
+        font-family: "Pretendard-Bold";
+        src: url(../fonts/Pretendard-Bold.woff),
+            url(../fonts/Pretendard-Bold.woff2);
+    }
+
+    @font-face {
+        font-family: "Pretendard-Regular";
+        src: url(../fonts/Pretendard-Regular.woff),
+            url(../fonts/Pretendard-Regular.woff2);
+    }
+
+
+    .wrap {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 100%;
+        height: 53px;
+        position: fixed;
+
+        background-color: #f5f5f5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 99;
+    }
+
+    header .inner_mo {
+        display: none;
+    }
+
+    header .inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* border: 1px solid red; */
+    }
+
+    header .inner h1 {
+        width: 100%;
+    }
+
+    header .inner h1 img {
+        width: 10%;
+    }
+
+    header .inner nav {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    header .inner nav a {
+        font-size: 20px;
+        font-family: "Pretendard-Bold";
+    }
+
+    #intro {
+        width: 100%;
+        height: 747px;
+        position: relative;
+    }
+
+    #intro .slider {
+        width: 100%;
+        position: relative;
+    }
+
+    #intro .slider .slide {
+        position: relative;
+    }
+
+    #intro .slider img {
+        width: 100%;
+        display: block;
+    }
+
+    #intro .slider .title {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+        color: #fff;
+    }
+
+    #intro .slider .title h2 {
+        font-size: 50px;
+        font-family: "Pretendard-Bold";
+        line-height: 1.2;
+        margin-bottom: 64px;
+    }
+
+    #intro .slider .title p {
+        font-size: 30px;
+        font-family: "Pretendard-Regular";
+        line-height: 1.2;
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        font-size: 50px;
+        background: rgba(0, 0, 0, 0);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .slick-prev {
+        left: 20px;
+    }
+
+    .slick-next {
+        right: 20px;
+    }
+
+    /* card */
+    #card {
+        width: 100%;
+        height: 800px;
+        /* border: 1px solid red; */
+        position: relative;
+    }
+
+    #card .inner {
+        width: 80%;
+        height: 483px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #card .inner .card {
+        width: 22.3%;
+        /* border: 1px solid red; */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #card .inner .card .card_img {
+        width: 100%;
+    }
+
+    #card .inner .card .card_img img {
+        width: 100%;
+    }
+
+    #card .inner .card .title {
+        width: 90%;
+        margin: 20px auto 0;
+        /* border: 1px solid blue; */
+    }
+
+    #card .inner .card .title h2 {
+        font-size: 30px;
+        font-family: "Pretendard-Bold";
+    }
+
+    #card .inner .card .title h3 {
+        font-size: 18px;
+        font-family: "Pretendard-Regular";
+        margin: 20px auto 80px;
+    }
+
+    #card .inner .card .title p {
+        font-size: 14px;
+        color: #bdbdbd;
+    }
+
+    #card_mo {
+        display: none;
+    }
+
+    /* custom */
+    #custom {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #custom .title {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #custom .title a:hover {
+        background-color: #979797;
+    }
+
+    #custom .title a {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        width: 170px;
+        border: 1px solid #000;
+        padding: 15px;
+        transition: all 0.3s;
+        background-color: #fafafa;
+    }
+
+    #custom .title a.active {
+        box-shadow: 0 1px 0 #333333;
+        background-color: #36fab9;
+        color: #000000;
+    }
+
+    #custom .contents {
+        width: 90%;
+        margin: 100px auto 0;
+        height: auto;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    #custom .contents .inner {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #custom .contents .inner img {
+        display: inline-block;
+        max-width: 20%;
+        height: auto;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background-color: #1c1d1c;
+    }
+
+    footer .inner {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    footer .inner img {
+        width: 15%;
+        margin-bottom: 30px;
+    }
+
+    footer .inner h2 {
+        font-size: 18px;
+        color: #fff;
+        font-family: "Pretendard-Regular";
+    }
+}
